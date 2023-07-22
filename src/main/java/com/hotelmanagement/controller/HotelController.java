@@ -61,6 +61,7 @@ public class HotelController {
 	@ApiOperation(value = "Api to add hotel")
 	public ResponseEntity<?> register(HotelAddRequest hotelAddRequest) {
 		LOG.info("Recieved request for Add Hotel");
+		System.out.println("complete data"+hotelAddRequest);
 
 		CommanApiResponse response = new CommanApiResponse();
 

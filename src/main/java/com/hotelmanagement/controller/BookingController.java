@@ -51,7 +51,7 @@ public class BookingController {
 	public ResponseEntity<?> register(Booking booking) {
 		LOG.info("Recieved request for booking hotel");
 
-		System.out.println(booking);
+		System.out.println("booking data for adding hotel"+booking);
 		
 		CommanApiResponse response = new CommanApiResponse();
 

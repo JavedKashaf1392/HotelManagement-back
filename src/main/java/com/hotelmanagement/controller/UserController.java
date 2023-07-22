@@ -189,9 +189,9 @@ public class UserController {
 	public ResponseEntity<?> fetchAllHotelUsers() {
 		
 		UsersResponseDto response = new UsersResponseDto();
-		
+		System.out.println("Roles data"+UserRole.HOTEL.value());
 		List<User> users = userService.getUsersByRoleAndHotelId(UserRole.HOTEL.value(), 0);
-		
+		System.out.println("complete hotel data"+users);
 		if(users == null || users.isEmpty()) {
 			response.setResponseCode(ResponseCode.SUCCESS.value());
 			response.setResponseMessage("No Users with Role Hotel found");
